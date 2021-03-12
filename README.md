@@ -5,7 +5,6 @@
 [![GitHub issues](https://img.shields.io/github/issues-raw/gok-dev/react-native-template-gok-redux.svg)](https://github.com/gok-dev/react-native-template-gok-redux/issues)
 [![GitHub last commit](https://img.shields.io/github/last-commit/gok-dev/react-native-template-gok-redux.svg)](https://github.com/gok-dev/react-native-template-gok-redux/commits/master)
 [![NPM](https://img.shields.io/npm/l/react-native-template-gok-redux.svg)](https://choosealicense.com/licenses/mit)
-[![Maintainability](https://api.codeclimate.com/v1/badges/2dee7b24d9197e9482c1/maintainability)](https://codeclimate.com/github/gok-dev/react-native-template-gok-redux/maintainability)
 
 <!-- PROJECT LOGO -->
 <br />
