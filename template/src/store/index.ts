@@ -1,21 +1,21 @@
-import { combineReducers, createStore, applyMiddleware, compose } from 'redux';
-import thunk from 'redux-thunk';
+import { createStore, compose, applyMiddleware } from 'redux'
+import createSagaMiddleware from 'redux-saga'
 
-const initialState = {};
+import rootReducer from './ducks'
+import rootSaga from './sagas'
 
-// Reducers
-import Main from './main/reducer';
+const initialState = {}
 
-const reducers = combineReducers({
-  Main
-});
+const sagaMiddleware = createSagaMiddleware()
 
-const store = createStore(
-  reducers,
-  initialState,
-  compose(
-    applyMiddleware(thunk)
-  )
-);
+const middlewares = [sagaMiddleware]
 
-export default store;
+const enhancer = __DEV__
+  ? compose(applyMiddleware(...middlewares))
+  : applyMiddleware(...middlewares)
+
+const store = createStore(rootReducer, initialState, enhancer)
+
+sagaMiddleware.run(rootSaga)
+
+export default store
