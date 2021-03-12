@@ -1,0 +1,29 @@
+{
+  "name": "react-native-template-gok-typescript",
+  "version": "0.1.13",
+  "description": "Clean and minimalist React Native template for a quick start with TypeScript.",
+  "scripts": {
+    "prepublishOnly": "npm --no-git-tag-version version $TRAVIS_TAG"
+  },
+  "files": [
+    "template",
+    "template.config.js"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gok-dev/react-native-template-gok-typescript.git"
+  },
+  "keywords": [
+    "react-native",
+    "typescript",
+    "jest",
+    "template",
+    "boilerplate"
+  ],
+  "author": "Julio Augusto <julio.sousa@gok.digital>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gok-dev/react-native-template-gok-typescript/issues"
+  },
+  "homepage": "https://github.com/gok-dev/react-native-template-gok-typescript#readme"
+}
