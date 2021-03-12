@@ -1,11 +1,11 @@
 <!-- PROJECT SHIELDS -->
 
-[![npm](https://img.shields.io/npm/v/react-native-template-gok-typescript.svg?label=npm%20package)](https://www.npmjs.com/package/react-native-template-gok-typescript)
-[![npm](https://img.shields.io/npm/dt/react-native-template-gok-typescript.svg)](https://www.npmjs.com/package/react-native-template-gok-typescript)
-[![GitHub issues](https://img.shields.io/github/issues-raw/gok-dev/react-native-template-gok-typescript.svg)](https://github.com/gok-dev/react-native-template-gok-typescript/issues)
-[![GitHub last commit](https://img.shields.io/github/last-commit/gok-dev/react-native-template-gok-typescript.svg)](https://github.com/gok-dev/react-native-template-gok-typescript/commits/master)
-[![NPM](https://img.shields.io/npm/l/react-native-template-gok-typescript.svg)](https://choosealicense.com/licenses/mit)
-[![Maintainability](https://api.codeclimate.com/v1/badges/2dee7b24d9197e9482c1/maintainability)](https://codeclimate.com/github/gok-dev/react-native-template-gok-typescript/maintainability)
+[![npm](https://img.shields.io/npm/v/react-native-template-gok-redux.svg?label=npm%20package)](https://www.npmjs.com/package/react-native-template-gok-redux)
+[![npm](https://img.shields.io/npm/dt/react-native-template-gok-redux.svg)](https://www.npmjs.com/package/react-native-template-gok-redux)
+[![GitHub issues](https://img.shields.io/github/issues-raw/gok-dev/react-native-template-gok-redux.svg)](https://github.com/gok-dev/react-native-template-gok-redux/issues)
+[![GitHub last commit](https://img.shields.io/github/last-commit/gok-dev/react-native-template-gok-redux.svg)](https://github.com/gok-dev/react-native-template-gok-redux/commits/master)
+[![NPM](https://img.shields.io/npm/l/react-native-template-gok-redux.svg)](https://choosealicense.com/licenses/mit)
+[![Maintainability](https://api.codeclimate.com/v1/badges/2dee7b24d9197e9482c1/maintainability)](https://codeclimate.com/github/gok-dev/react-native-template-gok-redux/maintainability)
 
 <!-- PROJECT LOGO -->
 <br />
@@ -14,10 +14,11 @@
     <img src="https://avatars1.githubusercontent.com/u/44470542?s=200&v=4" alt="Logo">
   </a>
 
-  <h3 align="center">Template Gok TypeScript</h3>
+  <h3 align="center">Template Gok Redux</h3>
 </p>
 
 ### Nota sobre a antiga CLI do React Native
+
 Este template funciona apenas com a nova CLI do React Native. Certifique-se de ter desinstalado primeiro a antiga CLI - `react-native-cli`, para fazer isso rode o comando `npm uninstall -g react-native-cli`. Se você não quiser usar o NPX poderá instalar a nova CLI globalmente com o comando `npm i -g @react-native-community/cli` ou `yarn global add @react-native-community/cli`.
 
 Informações adicionais podem ser encontradas aqui: https://github.com/react-native-community/cli#about
@@ -50,6 +51,7 @@ Este projeto visa a criação de um template que possa ser utilizado no momento 
 Abaixo segue o que foi utilizado na criação deste template:
 
 - [React Native](http://facebook.github.io/react-native/) - O React Native é um framework que permite o desenvolvimento de aplicações mobile usando JavaScript e React;
+- [Redux](https://redux.js.org/) - Redux é uma biblioteca JavaScript de código aberto para gerenciar o estado do aplicativo. É mais comumente usado com bibliotecas como React ou Angular para criar interfaces de usuário.
 - [TypeScript](https://www.typescriptlang.org/) - TypeScript é um superconjunto de JavaScript desenvolvido pela Microsoft que adiciona tipagem e alguns outros recursos a linguagem. Anders Hejlsberg, arquiteto da linguagem C# e criador das linguagens Delphi e Turbo Pascal, trabalhou no desenvolvimento do TypeScript.
 - [React Navigation](https://reactnavigation.org/) - O React Navigation surgiu da necessidade da comunidade do React Native de uma navegação de forma fácil de se usar e escrita toda em JavaScript;
 - [React Native Gesture Handler](https://kmagiera.github.io/react-native-gesture-handler/) - API declarativa que permite a manipulação de toques e gestos no React Native;
@@ -125,7 +127,7 @@ Serão explicados os arquivos e diretórios na seção de [Edição](#edição).
 1. Para instalar e utilizar esse template o processo é bem simples, basta criar um projeto novo utilizando o comando:
 
 ```sh
-npx react-native init MyApp --template react-native-template-gok-typescript
+npx react-native init MyApp --template react-native-template-gok-redux
 ```
 
 2. Depois do projeto criado você pode deletar o arquivo `App.js` da raiz, pois o arquivo `index.js` agora aponta para a pasta **src**.

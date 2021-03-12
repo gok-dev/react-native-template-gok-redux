@@ -1,7 +1,7 @@
 {
-  "name": "react-native-template-gok-typescript",
+  "name": "react-native-template-gok-redux",
   "version": "0.1.13",
-  "description": "Clean and minimalist React Native template for a quick start with TypeScript.",
+  "description": "Clean and minimalist React Native template for a quick start with Redux.",
   "scripts": {
     "prepublishOnly": "npm --no-git-tag-version version $TRAVIS_TAG"
   },
@@ -11,11 +11,13 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gok-dev/react-native-template-gok-typescript.git"
+    "url": "git+https://github.com/gok-dev/react-native-template-gok-redux.git"
   },
   "keywords": [
     "react-native",
     "typescript",
+    "redux",
+    "redux-sagas",
     "jest",
     "template",
     "boilerplate"
@@ -23,7 +25,7 @@
   "author": "Julio Augusto <julio.sousa@gok.digital>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/gok-dev/react-native-template-gok-typescript/issues"
+    "url": "https://github.com/gok-dev/react-native-template-gok-redux/issues"
   },
-  "homepage": "https://github.com/gok-dev/react-native-template-gok-typescript#readme"
+  "homepage": "https://github.com/gok-dev/react-native-template-gok-redux#readme"
 }
