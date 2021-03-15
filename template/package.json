@@ -7,6 +7,7 @@
     "ios": "react-native run-ios",
     "start": "react-native start",
     "test": "jest",
+    "test:coverage": "jest --coverage",
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx"
   },
   "dependencies": {
@@ -35,6 +36,7 @@
     "@commitlint/cli": "^12.0.1",
     "@commitlint/config-conventional": "^12.0.1",
     "@react-native-community/eslint-config": "^2.0.0",
+    "@testing-library/react-native": "^7.2.0",
     "@types/axios": "^0.14.0",
     "@types/jest": "^26.0.20",
     "@types/react": "^17.0.3",
@@ -86,6 +88,21 @@
       "jsx",
       "json",
       "node"
+    ],
+    "setupFilesAfterEnv": [
+      "@testing-library/jest-native/extend-expect",
+    ],
+    "setupFiles": [
+      "<rootDir>/src/setupTests.ts",
+      "./node_modules/react-native-gesture-handler/jestSetup.js"
+    ],
+    "collectCoverageFrom": [
+      "<rootDir>/src/pages/**/*.tsx",
+      "<rootDir>/src/components/**/*.tsx",
+      "<rootDir>/src/contexts/*.tsx",
+      "!<rootDir>/src/contexts/index.tsx",
+      "<rootDir>/src/store/*.tsx",
+      "!<rootDir>/src/store/index.tsx"
     ]
   },
   "config": {
