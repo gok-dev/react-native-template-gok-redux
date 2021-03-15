@@ -1,21 +1,21 @@
-import { createStore, compose, applyMiddleware } from 'redux'
-import createSagaMiddleware from 'redux-saga'
+import { createStore, compose, applyMiddleware } from 'redux';
+import createSagaMiddleware from 'redux-saga';
 
-import rootReducer from './ducks'
-import rootSaga from './sagas'
+import rootReducer from './ducks';
+import rootSaga from './sagas';
 
-const initialState = {}
+const initialState = {};
 
-const sagaMiddleware = createSagaMiddleware()
+const sagaMiddleware = createSagaMiddleware();
 
-const middlewares = [sagaMiddleware]
+const middlewares = [sagaMiddleware];
 
 const enhancer = __DEV__
   ? compose(applyMiddleware(...middlewares))
-  : applyMiddleware(...middlewares)
+  : applyMiddleware(...middlewares);
 
-const store = createStore(rootReducer, initialState, enhancer)
+const store = createStore(rootReducer, initialState, enhancer);
 
-sagaMiddleware.run(rootSaga)
+sagaMiddleware.run(rootSaga);
 
-export default store
+export default store;

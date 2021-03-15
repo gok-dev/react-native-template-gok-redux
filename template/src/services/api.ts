@@ -1,26 +1,17 @@
 import axios from 'axios';
 
 const api = axios.create({
-  baseURL: 'https://api.github.com'
+  baseURL: 'https://api.github.com',
 });
 
 api.interceptors.request.use(
-  async (config: any) => {
-    return config;
-  },
-  (error: any) => {
-    return Promise.reject(error);
-  },
+  async (config: any) => config,
+  (error: any) => Promise.reject(error)
 );
 
 api.interceptors.response.use(
-  (response: any) => {
-    return response;
-  },
-  async (error: any) => {
-    return Promise.reject(error);
-  },
+  (response: any) => response,
+  async (error: any) => Promise.reject(error)
 );
-
 
 export default api;
