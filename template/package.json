@@ -90,8 +90,11 @@
       "node"
     ],
     "setupFilesAfterEnv": [
-      "@testing-library/jest-native/extend-expect",
-      "<rootDir>/src/setupTests.ts"
+      "@testing-library/jest-native/extend-expect"
+    ],
+    "setupFiles": [
+      "<rootDir>/src/setupTests.ts",
+      "./node_modules/react-native-gesture-handler/jestSetup.js"
     ],
     "collectCoverageFrom": [
       "<rootDir>/src/pages/**/*.tsx",
