@@ -1,6 +1,6 @@
 {
   "name": "react-native-template-gok-redux",
-  "version": "0.1.13",
+  "version": "0.1.14",
   "description": "Clean and minimalist React Native template for a quick start with Redux.",
   "scripts": {
     "prepublishOnly": "npm --no-git-tag-version version $TRAVIS_TAG"
